@@ -1,26 +1,83 @@
-# Book Store MERN stack project
+# Book Store Project
 
-## Lessons
+## Overview
+The Book Store Project is a full-stack web application that allows users to create, read, update, and delete books. The application is built using a microservices architecture, with a separate backend and frontend.
 
-- [x] Lesson 01: Create Node.js project from scratch
-- [x] Lesson 02: Create our first Http Route
-- [x] Lesson 03: Add MongoDB and mongoose to node js
-- [x] Lesson 04: Create Book model with mongoose
-- [x] Lesson 05: Save a new Book with mongoose
-- [x] Lesson 06: Get All Books with mongoose
-- [x] Lesson 07: Get One Book by id with mongoose
-- [x] Lesson 08: Update a Book with mongoose
-- [x] Lesson 09: Delete a book with mongoose
-- [x] Lesson 10: Refactor Node js with express router
-- [x] Lesson 11: CORS policy in Node js and Express js
-- [x] Lesson 12: Create React project, Vite, Tailwind CSS
-- [x] Lesson 13: SPA and Add react router dom
-- [x] Lesson 14: Show Books List in React
-- [x] Lesson 15: Show Book Details in React
-- [x] Lesson 16: Create Book in React
-- [x] Lesson 17: Edit Book in React
-- [x] Lesson 18: Delete Book in React
-- [x] Lesson 19: Show Books List as Card
-- [x] Lesson 20: Make Book Card a single component
-- [x] Lesson 21: Add Book Modal
-- [x] Lesson 22: Improve User Experience (UX) with beautiful alert
+## Project Structure
+The project is divided into two main directories:
+- `backend`: contains the server-side code, written in Node.js and Express.js
+- `frontend`: contains the client-side code, written in React.js
+
+## Backend
+The backend is responsible for managing the data and providing APIs for the frontend to interact with. It uses the following technologies:
+- Node.js: as the runtime environment
+- Express.js: as the web framework
+- Mongoose: as the ORM for interacting with the MongoDB database
+
+### API Endpoints
+- `GET /books`: retrieves a list of all books
+- `GET /books/:id`: retrieves a single book by ID
+- `POST /books`: creates a new book
+- `PUT /books/:id`: updates a single book
+- `DELETE /books/:id`: deletes a single book
+
+## Frontend
+The frontend is responsible for rendering the user interface and interacting with the backend APIs. It uses the following technologies:
+- React.js: as the UI library
+- React Router: for client-side routing
+- Axios: for making HTTP requests to the backend
+
+### Features
+The frontend provides the following features:
+- A list view of all books
+- A detail view of a single book
+- A form to create a new book
+- A form to edit an existing book
+- A button to delete a book
+
+## Core Features
+The application provides the following features:
+- CRUD operations for books
+- Validation for book fields
+- Error handling for API requests
+
+## Installation
+To install the application, follow these steps:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/book-store-project.git
+```
+
+2. Install dependencies:
+```bash
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
+```
+
+3. Start the backend server:
+```bash
+cd backend
+npm start
+```
+
+4. Start the frontend server:
+```bash
+cd frontend
+npm start
+```
+
+## Usage
+To use the application, follow these steps:
+
+1. Open a web browser and navigate to `http://localhost:3000`
+2. Click on the "Books" tab to view the list of books
+3. Click on a book title to view the book details
+4. Click on the "Create Book" button to create a new book
+5. Click on the "Edit Book" button to edit an existing book
+6. Click on the "Delete Book" button to delete a book
